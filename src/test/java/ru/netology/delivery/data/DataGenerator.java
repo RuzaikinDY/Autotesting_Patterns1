@@ -19,19 +19,19 @@ public class DataGenerator {
     }
 
     public static String generateCity(String locale) {
-        Faker faker = new Faker(new Locale("ru"));
+        Faker faker = new Faker(new Locale(locale));
         String city = faker.address().cityName();
         return city;
     }
 
     public static String generateName(String locale) {
-        Faker faker = new Faker(new Locale("ru"));
+        Faker faker = new Faker(new Locale(locale));
         String name = faker.name().fullName();
         return name;
     }
 
     public static String generatePhone(String locale) {
-        Faker faker = new Faker(new Locale("ru"));
+        Faker faker = new Faker(new Locale(locale));
         String phone = faker.phoneNumber().phoneNumber();
         return phone;
     }
